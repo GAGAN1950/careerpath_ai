@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CareerPath AI</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>CareerPath AI</h1>
+
+    <p>AI-Powered Personalized Career Guidance</p>
+
+</header>
+
+
+<main>
+
+<section class="card">
+
+    <h2>Student Information</h2>
+
+    <input
+        type="text"
+        id="name"
+        placeholder="Enter your name"
+    >
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Enter your email"
+    >
+
+</section>
+
+
+<section class="card">
+
+    <h2>Select Your Skills</h2>
+
+    <div class="skills">
+
+        <label>
+            <input type="checkbox" value="python">
+            Python
+        </label>
+
+        <label>
+            <input type="checkbox" value="linux">
+            Linux
+        </label>
+
+        <label>
+            <input type="checkbox" value="networking">
+            Networking
+        </label>
+
+        <label>
+            <input type="checkbox" value="cybersecurity">
+            Cybersecurity
+        </label>
+
+        <label>
+            <input type="checkbox" value="ethical hacking">
+            Ethical Hacking
+        </label>
+
+        <label>
+            <input type="checkbox" value="cloud">
+            Cloud
+        </label>
+
+        <label>
+            <input type="checkbox" value="devops">
+            DevOps
+        </label>
+
+        <label>
+            <input type="checkbox" value="html">
+            HTML
+        </label>
+
+        <label>
+            <input type="checkbox" value="css">
+            CSS
+        </label>
+
+        <label>
+            <input type="checkbox" value="javascript">
+            JavaScript
+        </label>
+
+        <label>
+            <input type="checkbox" value="sql">
+            SQL
+        </label>
+
+        <label>
+            <input type="checkbox" value="statistics">
+            Statistics
+        </label>
+
+        <label>
+            <input type="checkbox" value="machine learning">
+            Machine Learning
+        </label>
+
+        <label>
+            <input type="checkbox" value="data analysis">
+            Data Analysis
+        </label>
+
+    </div>
+
+</section>
+
+
+<section class="card">
+
+    <h2>Your Interest</h2>
+
+    <select id="interest">
+
+        <option value="cybersecurity">
+            Cybersecurity
+        </option>
+
+        <option value="cloud">
+            Cloud
+        </option>
+
+        <option value="data">
+            Data
+        </option>
+
+        <option value="web">
+            Web Development
+        </option>
+
+    </select>
+
+
+    <h2>Career Goal</h2>
+
+    <input
+        type="text"
+        id="goal"
+        placeholder="Example: Cybersecurity Engineer"
+    >
+
+    <button onclick="analyzeCareer()">
+        Analyze My Career
+    </button>
+
+</section>
+
+
+<section
+    id="results"
+    class="card hidden">
+
+    <h2>Career Recommendations</h2>
+
+    <div id="recommendations"></div>
+
+</section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

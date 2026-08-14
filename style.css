@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0f172a,
+            #1e293b
+        );
+
+    color: white;
+
+    min-height: 100vh;
+}
+
+
+header {
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+
+header h1 {
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+
+header p {
+
+    color: #cbd5e1;
+
+    font-size: 18px;
+}
+
+
+main {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 20px;
+}
+
+
+.card {
+
+    background: #ffffff;
+
+    color: #111827;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,0.2);
+}
+
+
+.card h2 {
+
+    margin-bottom: 20px;
+}
+
+
+input,
+select {
+
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+
+.skills {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(180px, 1fr));
+
+    gap: 12px;
+}
+
+
+.skills label {
+
+    background: #f1f5f9;
+
+    padding: 12px;
+
+    border-radius: 8px;
+}
+
+
+.skills input {
+
+    width: auto;
+
+    margin-right: 8px;
+}
+
+
+button {
+
+    width: 100%;
+
+    padding: 15px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+
+    background: #1d4ed8;
+}
+
+
+.result {
+
+    border-left: 5px solid #2563eb;
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    background: #f8fafc;
+
+    border-radius: 8px;
+}
+
+
+.score {
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: #2563eb;
+
+    margin: 10px 0;
+}
+
+
+.hidden {
+
+    display: none;
+}
+
+
+.tag {
+
+    display: inline-block;
+
+    background: #dbeafe;
+
+    color: #1e40af;
+
+    padding: 6px 10px;
+
+    margin: 4px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+}
